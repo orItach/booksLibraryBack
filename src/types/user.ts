@@ -2,6 +2,11 @@ interface User {
     idNumber:string,
     firstName:string,
     lastName:string,
-    type:string,// chagne to enum
-    loanBooks:[Book]
+    type:UserType,// chagne to enum customer Or employees
+    loanedBooks:[LoanedBook]
+}
+
+enum UserType{
+    Customer,
+    Employee
 }

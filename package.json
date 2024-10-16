@@ -11,10 +11,26 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "@types/compression": "^1.7.5",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/response-time": "^2.3.8",
+    "async-mutex": "^0.5.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "effect": "^3.9.2",
+    "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "http-status-code": "^2.1.0",
+    "http-status-codes": "^2.3.0",
+    "mongodb": "^6.9.0",
+    "response-time": "^2.3.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/mongodb": "^4.0.7",
     "@types/node": "^22.7.5",
     "typescript": "^5.6.3"
   }
