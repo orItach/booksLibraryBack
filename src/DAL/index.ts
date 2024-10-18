@@ -1,12 +1,8 @@
-import { Collection, Db,MongoClient } from "mongodb";
+import { Db, MongoClient } from "mongodb";
 
-// import { mongoClientOption, mongoUri, libararyDbName, DBConnection } from "../config";
+import { libraryDbName, mongoClientOption, mongoUri } from "../config";
 
-// export const connectToDB = ():{DbConnection:any,mongoClient:MongoClient}=>{
-//     const mongoClient = new MongoClient(mongoUri, mongoClientOption);
-//     return { DbConnection: mongoClient.connect(), mongoClient}
-// }
-
-// export const connectToCollection = (DbConnection:any, CollectionName:String)=>{
-//     return DbConnection
-// }
+export const connectToDB = ():Db=>{
+    const mongoClient = new MongoClient(mongoUri, mongoClientOption);
+    return mongoClient.db(libraryDbName)
+}

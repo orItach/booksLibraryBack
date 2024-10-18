@@ -7,7 +7,7 @@ import responseTime from "response-time";
 
 import routes from "./routes"
 
-const {users, books} = routes
+const {users, books,loans} = routes
 const app = express();
 app.use(compression())
 app.use(json())
@@ -19,6 +19,8 @@ app.use(helmet())
 app.use(cors())
 app.use('/users',users )
 app.use('/books', books)
+app.use('/loans', loans)
+
 
 
 export default app

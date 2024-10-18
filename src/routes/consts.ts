@@ -1,0 +1,1 @@
+export const userNotPermittedMessage ="user is costumer and not permitted to this action"

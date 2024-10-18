@@ -1,4 +1,6 @@
-interface User {
+import { LoanedBook } from "./book";
+
+export interface User {
     idNumber:string,
     firstName:string,
     lastName:string,
@@ -6,7 +8,7 @@ interface User {
     loanedBooks:[LoanedBook]
 }
 
-enum UserType{
+export enum UserType{
     Customer,
     Employee
 }
